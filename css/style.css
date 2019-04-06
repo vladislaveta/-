@@ -141,7 +141,7 @@ html {
 }
 .two-columns {
   display: flex;
-
+  flex-wrap: wrap;
 }
 .site-navigation {
   width: 300px;
@@ -149,6 +149,8 @@ html {
 }
 .main-stuff {
   width: 900px;
+  padding: 75px;
+  overflow: auto;
 }
 
 .site-navigation__list {
@@ -203,4 +205,49 @@ html {
   padding: 5px 10px;
   color: #000000;
   text-decoration: none;
+}
+
+.main-stuff__welcome {
+  font-size: 32px;
+  padding: 150px 100px 0px 10px;
+  text-align: center;
+}
+.main-stuff--login {
+  padding: 0;
+  width: 1200px;
+}
+.main-stuff__welcome--login {
+  padding: 150px 100px;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 2px solid grey;
+
+  width: 100%;
+  max-width: 100%;
+}
+.table__title {
+  font-size: 18px;
+ 
+  padding: 5px 40px;
+  border: 1px solid grey;
+}
+.table__column {
+  padding: 7px 10px;
+  border: 1px solid grey;
+}
+.table-buttons {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+.table-buttons__button {
+  font-size: 18px;
+  padding: 7px 15px;
+  margin-right: 10px;
+}
+.table-buttons__button:last-child {
+  margin-right: 0;
 }
